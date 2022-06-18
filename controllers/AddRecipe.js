@@ -67,7 +67,7 @@ var userprofile = (req, res) => {
     return res
       .status(200)
       .send({
-        "url":`${req.file.fieldname}/${req.file.filename}`
+        "url":`https://dev-image.herokuapp.com/${req?.file?.fieldname}/${req?.file?.filename}`
       });
 
     // Everything went fine.
